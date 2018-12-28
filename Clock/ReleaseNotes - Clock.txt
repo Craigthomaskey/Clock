@@ -1,0 +1,83 @@
+﻿Change Notes
+
+Clock (1.4.8.32)
+Minor 4 Countdown Changes
+1.	Changed starting position of notifications to manual
+2.	Change order of start up tasks for notifications
+	a.	Aimed to fix flutter from notification creation/placement
+3.	Moved countdown from main label to notifications
+4.	Fixed bug causing friday final buzzer to fail to play
+5.	Added logic to run visual countdown even if sounds are not currently actibe
+6.	Updated halfday logic to carry same changes
+7.	Fixed bug causing snack time to play minute countdowns
+
+NOTE! Logic can be added for a timer config. This could be a dynamic clock with add/subract and change options to timers
+KNOWN BUG! If transparent and user chnages text color to transparency key the form will not show on next load.
+
+Clock (1.3.8.29)
+Build 8 Screaming lady fix
+1.	Moved custom colors to KDM overall file
+2.	Fixed bug causing crash when prograss bar cannot calculate real number
+3.	Fixed bug causing crash at opne before 8:30 do to progress bar
+4.	Changed logic on open timer to run progress bar from startup time
+5.	Removed minutes form snack time timer
+6.	Fixed bug causing "x" to show as logo when cloudy
+7.	Added dispose logic for garbage from timers
+8.	Added volume setting for timers
+9.	Fixed bug causing halfday timers to play when the aren't FUCKING suposed to.
+
+Clock (1.3.7.24)
+Morjor 1 Countdown Logic Re-write
+1.	Added check for config files
+2.	Changed EOD and push weather to rediculaous interval to force foever display
+3.	Added path missing notification for custom color saving logic
+4.	Removed old countdown logic
+5.	Changed find prior timer logic for progress bar
+6.	Rewrote all countdown logic
+	a.	Split halfday and full day timers into seprate classes
+	b.	cleaned up all logic
+	c.	changed settings method returns to dynamic calls
+	d.	Change referal system to indexes
+	e.	signifigantly redused number of lines of code and repeat actions
+7.	Signifigantly reduced system load for entire program
+8.	Rebuild sound file system
+9.	Added update and cycle for show weather button
+10.	Added label in upper left which displays the curret timer
+11.	Removed logic from results keeping form from leaving the bottom of the screen
+
+Clock (0.3.5.23)
+Build 5 Transparency
+1.	Added transparency preset
+2.	Moved scattered clouds to partly cloudy icon
+3.	Fixed bug keeping overcast clouds from displaying icon
+4.	Notification text color matches clock text color
+5.	Control panels are one shade lighter than background for clarity
+6.	Fixed bug keeping icon colors from changing when background color changed
+7.	Fliped the color patterns for icons on notifications
+8.	Fixed bug causing highlights on quick settings for not change with highlight changes
+9.	Moved color loads to "On Shown" to fixed bug cauing form to not draw all assets
+10.	Added setting to turn off countdown display
+11.	Fixed bug with timing created for testing
+12.	Fixed bug causing meat timers to start before grain timers durring halfday
+
+Clock (0.3.4.16)
+Re-Release
+1.	Rebuild of functions and display for "Talking Clock" logic
+2.	Added change notes
+3.	Removed panels
+4.	Removed date label
+5.	Replaced hover panel with newer panel logic
+6.	Added resize panel
+7.	Added quick settings to hover logic
+8.	Added current weather logic
+9.	Added notifications logic
+10.	Added date, weather and event notifications
+11.	Added color presets
+12.	Removed old camo and transpanet color options
+13.	Added count down logic
+14.	Added alternative voice lines
+15.	Cleaned up a large amount of code
+16.	Fixed several little bugs
+17.	Re-build halfday logic
+	a.	No longer restarts whole program when toggled
+	b.	Dynamicaly switches between the two modes 
