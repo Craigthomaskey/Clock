@@ -107,10 +107,6 @@ namespace Clock
                 {
                     BuildNotification(Time, 5000, 0);
                 }));
-
-                //ChokeCount = 10;
-                //TimeLabel.Invoke((MethodInvoker)(() => TimeLabel.Text = Time));
-                //SizeText(TimeLabel);
                 MoveProgressBar();
             }
         }
